@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #6DF3C2;
+    font-family: "Sanchez", serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+    margin: 50px;
+    font-size: 1.5rem;
+}
+header span:nth-child(1) {
+    color: #B6174B;
+}
+header span:nth-child(2) {
+    color: #F5B841;
+}
+header span:nth-child(3) {
+    color: #1E2EDE;
+}
+
+.display{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.results{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: center;
+}
+
+.player, .computer{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+.player h1, .computer h1{
+    margin-bottom: 30px;
+}
+
+.player img, .computer img{
+    width: 100%;
+    border: 10px solid #FF004D;
+    box-shadow: 0 0 50px #FF004D;
+    border-radius: 15px;
+}
+
+.scoreboard{
+    text-align: center;
+    width: 100%;
+}
+
+.scoreboard h2{
+    font-size: 2.2rem;
+}
+
+.scoreboard h3{
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+#buttons button img{
+    width: 75%;
+
+}
+
+#buttons button{
+    width: 20vh;
+    height: 20vh;
+    font-size: 1.2rem;
+    margin: 10px;
+    border-radius: 15px;
+}
+#rock{
+    border: none;
+    background-color: #B6174B;
+    box-shadow: 0 0 50px #B6174B;
+    cursor: pointer;
+}
+#paper{
+    border: none;
+    background-color: #F5B841;
+    box-shadow: 0 0 50px #F5B841;
+    cursor: pointer;
+}
+#scissors{
+    border: none;
+    background-color: #1E2EDE;
+    box-shadow: 0 0 50px #1E2EDE;
+    cursor: pointer;
+}
+
+.invisible{
+    display: none !important;
+}
+
+.game-end{
+    color: white;
+    background-color: #008FAC;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    /* height: 52.8vh; */
+    gap: 30px;
+    padding: 20px;
+    width: 30%;
+
+    border: 7px solid #FF004D;
+    box-shadow: 0 0 5px 5px #FF004D;
+    border-radius: 15px;
+}
+
+.game-end h1{
+    font-size: 2.5rem;
+}
+
+.game-end h2{
+    font-size: 1.8rem;
+}
+
+.game-end p{
+    font-size: 1.2rem;
+}
+
+.game-end button{
+    width: 140px;
+    height: 90px;
+    font-size: 1.2rem;
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}

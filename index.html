@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap" rel="stylesheet">
+    <script src="javascript.js" defer></script>
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <script src="javascript.js"></script>
-
+    <header>
+        <h1><span>ROCK, </span><span>PAPER, </span><span>SCISSORS</span></h1>
+    </header>
+    <main>
+        <div class="display">
+            <div class="player">
+                <h1>YOU</h1>
+                <img src="images/player.jpg" alt="">
+            </div>
+            <div class="results">
+                <div class="scoreboard">
+                    <h2>Score: <span>0 - 0</span></h2>
+                    <h3 id="result" class="default">Choose a move</h3>
+                </div>
+            </div>
+            <div class="computer">
+                <h1>COMPUTER</h1>
+                <img src="images/computer.jpg" alt="">
+            </div>
+        </div>
+        <div id="buttons">
+            <button id="rock">
+                <img src="images/rock.png" alt="">
+            </button>
+            <button id="paper">
+                <img src="images/paper.png" alt="">
+            </button>
+            <button id="scissors">
+                <img src="images/scissors.png" alt="">
+            </button>
+        </div>
+        <div class="game-end invisible">
+            <h1>GAME OVER</h1>
+            <h2 id="final-result"> </h2>
+            <p>Would you like to play again?</p>
+            <button id="restart-btn">Restart 🔄</button>
+            
+        </div>
+    </main>
+    
 </body>
 </html>
